@@ -45,7 +45,7 @@ const Home = ({ children = "Grant" }) => {
 								className="uppercase flex items-center gap-2"
 							>
 								<a
-									href="/Logbook/public/Grant Agulue Resume.pdf"
+									href="https://1drv.ms/w/c/b3539b99af1996b4/IQBfcD0owK3-Sb5vqC6RzFy9AfiK1GkJ6p0WkVWRWC4Ppto?e=qFece3"
 									download={"Grant_Agulue_Resume.pdf"}
 									className="flex"
 								>
