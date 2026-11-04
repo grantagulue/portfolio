@@ -6,18 +6,18 @@ const services = [
 	{
 		title: "Frontend",
 		description:
-			"Participate in the full software development lifecycle, including analysis, design, test, and delivery.",
+			"Building intuitive, pixel-perfect web applications with a focus on seamless user experience, clean architecture, and modern frontend technologies.",
 		href: "",
 	},
 	{
 		title: "Backend",
 		description:
-			"Builds Backend systems and Infrastructures. Design and implement distributed algorithms and parallel processing techniques.",
+			"Developing secure, scalable backend APIs and data systems designed to handle heavy loads and complex processing seamlessly behind the scenes.",
 		href: "",
 	},
 	{
 		title: "Systems",
-		description: "",
+		description: "Engineering core system infrastructure and distributed workflows optimized for maximum speed, fault tolerance, and efficiency.",
 	},
 ];
 
