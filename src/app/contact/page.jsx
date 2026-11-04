@@ -14,7 +14,7 @@ import {
 	SelectValue,
 } from "@/components/ui/select";
 
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const info = [
