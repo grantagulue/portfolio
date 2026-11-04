@@ -40,33 +40,12 @@ const Contact = () => {
 				<div className="flex flex-col xl:flex-row gap-[30px]">
 					<div className="xl:w-[54%] order-2 xl:order-none">
 						<form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
-							<h3 className="text-4xl text-accent">Let's work</h3>
-							<p className="text-white/60">
-								I am an enthusiastic and
-								hard working person. I am able to work well both in a
-								team environment as well as using own initiative.
-							</p>
+							<h3 className="text-4xl text-accent">Contact Me</h3>
 							{/* input */}
 							<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-								<Input type="firstname" placeholder="Firstname" />
-								<Input type="lastname" placeholder="Lastname" />
 								<Input type="email" placeholder="Email address" />
 								<Input type="phone" placeholder="Phone number" />
 							</div>
-							{/* select */}
-							<Select>
-								<SelectTrigger className="w-full">
-									<SelectValue placeholder="Select a service" />
-								</SelectTrigger>
-								<SelectContent>
-									<SelectGroup>
-										<SelectLabel>Select a service</SelectLabel>
-										<SelectItem value="est">Web Development</SelectItem>
-										<SelectItem value="cst">System Design</SelectItem>
-										<SelectItem value="mst">Mobile Development</SelectItem>
-									</SelectGroup>
-								</SelectContent>
-							</Select>
 							{/* text area */}
 							<Textarea
 								className="h-[200px] "
