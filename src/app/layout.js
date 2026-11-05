@@ -14,7 +14,7 @@ export const metadata = {
 	description:
 		"This is my personal portfolio website showcasing my skills and projects as a software engineer.",
 	icons: {
-		// icon: "/favicon.ico",
+		icon: "/favicon.ico",
 	},
 };
 
