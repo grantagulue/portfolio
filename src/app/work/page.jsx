@@ -29,7 +29,7 @@ const projects = [
 
 		// todo: change the image link
 		image:
-			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlSdr4naPZqWX3WNzMD0rmkv2nxuXEdPHOeosvx0nQFQ&s",
+			"https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_Green.png",
 		live: "https://spotifyclee.vercel.app",
 		github: "https://github.com/grant1x",
 	},
@@ -42,7 +42,7 @@ const projects = [
 		stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Node.js" }],
 		// image broken, change the link
 		image:
-			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIfR7B-pI6hpiYjFSD_162wyvy9WCFFUFXa3De6lP5w-BdeNtj7mwjuWH3&s=10",
+			"data:image/png;base64,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",
 		live: "",
 		github: "https://github.com/grant1x",
 	},
@@ -55,7 +55,7 @@ const projects = [
 		stack: [{ name: "Next.js" }, { name: "Tailwind.css" }],
 		// todo: broken image, change link
 		image:
-			"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuOhc5VM4y5eKva0aQTeJd8LSucQcot0Z15aGW9pD4PlT375_0",
+			"https://img.magnific.com/premium-vector/barcode-vector-icon-bar-code-black-icon-realistic-barcode_230281-649.jpg?semt=ais_hybrid&w=740&q=80",
 		live: "",
 		github: "https://github.com/grant1x",
 	},
@@ -72,7 +72,7 @@ const projects = [
 			{ name: "firebase" },
 		],
 		image:
-			"https://clickup.com/blog/wp-content/uploads/2024/05/Note-Taking-Apps-Featured-Image.png",
+			"https://play-lh.googleusercontent.com/Kb0Ki_fCgnIvgbA6vQopnFH6SGK7d5JDO51b6EuTYLdGcAfiRISs8m8sICxB2sWZCeM",
 		live: "https://noteboardd.vercel.app",
 		github: "https://github.com/grant1x",
 	},
