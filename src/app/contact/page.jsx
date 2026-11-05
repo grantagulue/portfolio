@@ -31,7 +31,7 @@ const Contact = () => {
 			"Portfolio Website Contact Inquiry",
 		);
 
-		window.location.href = `mailto:grantagulue@://gmail.com{encodedSubject}&body=${encodedBody}`;
+		window.location.href = `mailto:grantagulue@://gmail.com${encodedSubject}&body=${encodedBody}`;
 	};
 
 	return (
