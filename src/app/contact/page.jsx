@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const info = [
 	{
@@ -15,6 +16,15 @@ const info = [
 ];
 
 const Contact = () => {
+	const [message, setMessage] = useState("");
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+
+		const encodedBody = encodeURIComponent(message);
+
+		window.location.href = `mailto:grantagulue@gmail.com?body=${encodedBody}`;
+	};
 	return (
 		<motion.section
 			initial={{ opacity: 0 }}
@@ -28,7 +38,10 @@ const Contact = () => {
 				{/** form */}
 				<div className="flex flex-col xl:flex-row gap-[30px]">
 					<div className="xl:w-[54%] order-2 xl:order-none">
-						<form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
+						<form
+							className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
+							onSubmit={handleSubmit}
+						>
 							<h3 className="text-4xl text-accent">Contact Me</h3>
 							{/* input */}
 							<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -39,9 +52,12 @@ const Contact = () => {
 							<Textarea
 								className="h-[200px] "
 								placeholder="Type your message here."
+								onChange={(e) => {
+									setMessage(e.target.value);
+								}}
 							/>
 							{/* btn */}
-							<Button size="md" className="max-w-40">
+							<Button type="submit" size="md" className="max-w-40">
 								Send message
 							</Button>
 						</form>
