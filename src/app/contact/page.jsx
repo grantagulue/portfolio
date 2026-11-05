@@ -23,13 +23,10 @@ const Contact = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 
-		// Construct a clean, multi-line email body
 		const fullBodyText = `From: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`;
 
-		// Encode the body to safely format spaces and line breaks for the URL
 		const encodedBody = encodeURIComponent(fullBodyText);
 
-		// Subject line can also be added here optionally
 		const encodedSubject = encodeURIComponent(
 			"Portfolio Website Contact Inquiry",
 		);
