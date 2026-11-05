@@ -17,14 +17,26 @@ const info = [
 
 const Contact = () => {
 	const [message, setMessage] = useState("");
+	const [phone, setPhone] = useState("");
+	const [email, setEmail] = useState("");
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
 
-		const encodedBody = encodeURIComponent(message);
+		// Construct a clean, multi-line email body
+		const fullBodyText = `From: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`;
 
-		window.location.href = `mailto:grantagulue@gmail.com?body=${encodedBody}`;
+		// Encode the body to safely format spaces and line breaks for the URL
+		const encodedBody = encodeURIComponent(fullBodyText);
+
+		// Subject line can also be added here optionally
+		const encodedSubject = encodeURIComponent(
+			"Portfolio Website Contact Inquiry",
+		);
+
+		window.location.href = `mailto:grantagulue@://gmail.com{encodedSubject}&body=${encodedBody}`;
 	};
+
 	return (
 		<motion.section
 			initial={{ opacity: 0 }}
@@ -45,13 +57,25 @@ const Contact = () => {
 							<h3 className="text-4xl text-accent">Contact Me</h3>
 							{/* input */}
 							<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-								<Input type="email" placeholder="Email address" />
-								<Input type="phone" placeholder="Phone number" />
+								<Input
+									type="email"
+									placeholder="Email address"
+									value={email}
+									onChange={(e) => setEmail(e.target.value)}
+									required
+								/>
+								<Input
+									type="phone"
+									placeholder="Phone number"
+									value={phone}
+									onChange={(e) => setPhone(e.target.value)}
+								/>
 							</div>
 							{/* text area */}
 							<Textarea
 								className="h-[200px] "
 								placeholder="Type your message here."
+								value={message}
 								onChange={(e) => {
 									setMessage(e.target.value);
 								}}
